@@ -15,8 +15,8 @@ pool:
 steps:
 - script: |
     echo "Starting Pipeline Execution."
-    echo "Create ./tmp directory for volume mount."
-    mkdir tmp
+    echo "Create ./report directory for volume mount."
+    mkdir report
     echo ${PWD}
     
     # Get Artifacts from Jenkins
