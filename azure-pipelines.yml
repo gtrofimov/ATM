@@ -51,8 +51,8 @@ steps:
 
     docker run -i \
     -u 0:0 \
-    -v "$(pwd)/tmp:/tmp" \
-    -w /opt/parasoft/cpptest/examples/ATM \
+    -v "$(pwd):/ATM" \
+    -w /ATM \
     parasoft/cpptest:latest /bin/bash -c " \
     pwd; ls -la; cat /tmp/cpptestcli.properties; \
     mkdir build; cd build; cmake ..; cd ..; \
