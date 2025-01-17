@@ -64,7 +64,7 @@ steps:
     -report report \
     -property report.format=xml,html,sarif-azure \
     -showdetails \
-    -input compile_commands.json; \
+    -input build/compile_commands.json; \
     cpptestcli \
     -settings cpptestcli.properties \
     -compiler gcc_9-64 \
@@ -73,7 +73,7 @@ steps:
     -report report \
     -property report.format=xml,html,sarif-azure \
     -showdetails \
-    -input compile_commands.json"
+    -input build/compile_commands.json"
 
     # echo -e "\nDebug -- Verify ./tmp contents\n"
     # ls -R $(pwd)/tmp
