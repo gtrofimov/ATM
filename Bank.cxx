@@ -15,7 +15,7 @@ Bank::~Bank()
 Account* Bank::getAccount(int num, string password)
 {
     Account* userAccount = NULL;
-    if (num >=0 && myAccounts.size() > num)
+    if (myAccounts.size() > num)
     {
         userAccount = (Account*)myAccounts[num];
     }
@@ -26,7 +26,7 @@ Account* Bank::getAccount(int num, string password)
     }
     // No account with this number/password exists!!!
     return NULL;
-
+ 
 }
 
 // Create a new account and return a reference to it
