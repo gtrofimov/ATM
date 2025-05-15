@@ -36,8 +36,8 @@ steps:
     dtp.user=$(license.server.username)
     dtp.password=$(license.server.password)
     dtp.project=ATM
-    build.id=ATM-2025-01-23
-    report.dtp.publish=false" >> cpptestcli.properties
+    build.id=ATM-2025-05-15
+    report.dtp.publish=$(dtp.publish)" >> cpptestcli.properties
 
     echo -e "\nDebug -- Verify workspace contents.\n"
     ls -R
